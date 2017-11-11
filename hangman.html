@@ -1,50 +1,46 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=0.5, minimal-ui">
-    <link rel = "stylesheet" type = "text/css" href = "hm.css">
-    <title>Hangman</title>
-    <style>
-      canvas {
-        background-color: #FFF;
-      }
-    </style>
-    </head>
+	<head>
+    		<meta charset="utf-8">
+    		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=0.5, minimal-ui">
+    		<link rel = "stylesheet" type = "text/css" href = "hangman.css">
 
-    <body onload="startGame()">
-    
-    <header>      
-    <h1>Hangman</h1>
-    </header>
-    
-    <section>
+    		<title>Hangman</title>
 
-        <article>
-            <h2>Try to guess the right letters, if you can!</h2>
+		<style>
+      			canvas {
+        			background-color: #FFF;
+      			}
+    		</style>
+	</head>
+
+	<body onload="startGame()">
+	<header> <h1>Hangman</h1></header>
+		<section>
+			<article>
+            			<h2>Try to guess the right letters, if you can!</h2>
             
-            <button type="button" onclick="guessWord()">Guess word</button>   
-            <button type="button" onclick="showGameword()">Show Gameword</button> 
-            <button type="button" onclick="guessLetter()">Guess letter</button> 
+            			<button type="button" onclick="guessWord()">Guess word</button>   
+            			<button type="button" onclick="showGameword()">Show Gameword</button> 
+           			<button type="button" onclick="guessLetter()">Guess letter</button> 
 
-            <div id="idResult"></div> 
+            			<div id="idResult"></div> 
   
-            <p id="idShowGameword"></p>
+				<p id="idShowGameword"></p>
       
-            <canvas id="myCanvas" width="200" height="150" style="border:1px solid #FFF;">
-            Your browser does not support the HTML5 canvas tag.</canvas>
+				<canvas id="myCanvas" width="200" height="150" style="border:1px solid #FFF;">
+					Your browser does not support the HTML5 canvas 
+				</canvas>
 
-            <div id = "idWrongGuesses">
-                <h4>Wrong Guesses</h4>
-                <p id="idArrayOfWrongGuesses"></p>
-            </div>
+            			<div id = "idWrongGuesses">
+                			<h4>Wrong Guesses</h4>
+                			<p id="idArrayOfWrongGuesses"></p>
+            			</div>
             
-        </article>
+        		</article>
+    		</section>
+    	<footer>An application created by Blair Davis</footer>
+ 	<script src = "hangman.js"></script>\
+	</body>
 
-    </section>
-    
-    <footer>An application created by Blair Davis</footer>
-    <script src = "hm.js"></script>
-
-      </body>
-  </html>
+</html>
